@@ -112,7 +112,14 @@ h2 ~ p {
 /* ヒーロースタイル */
 .full-hero {
   background-color: #c7dbfc;
-  height: 50vh;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  padding-top: 10vh;
+}
+.hero-home {
+  background-image: url(/images/shark.jpg);
+  background-position: center top;
 }
 
 /* SNSスタイル */
@@ -134,12 +141,12 @@ h2 ~ p {
   width: 2.5em;
 }
 
-.social-list {
+.social-links {
   list-style: none;
   padding: 0;
   text-align: center;
 }
-.social-list > li {
+.social-links > li {
   display: inline-block;
   margin: 0 0.5em;
 }
