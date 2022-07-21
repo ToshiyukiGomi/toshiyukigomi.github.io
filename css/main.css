@@ -1,35 +1,4 @@
-/* レスポンシブスタイル */
-@media (max-width: 800px) {
-  html {
-    box-shadow: none;
-    padding: 0;
-  }
-  /* ヘッダースタイル */
-  .header-nav {
-    padding: 2vh 1em 0 0;
-  }
-  .header-nav > li {
-    margin-left: 0.25em;
-  }
-  .header-nav > li ~ li {
-    padding-left: 0.25em;
-  }
-  .nav-links a {
-    font-size: 3.25vw;
-  }
-  .header-logo {
-    left: auto;
-  }
-  .post-aside {
-    display: none;
-  }
-}
 
-@media (max-width: 600px) {
-  .half-hero {
-    display: none;
-  }
-}
 /* グローバルスタイル */
 html {
   box-shadow: 0 0 0 30px #000 inset;
@@ -495,4 +464,101 @@ width: 90vw;
   font-size: 0.8em;
   margin-top: 3em;
   padding-top: 2em;
+}
+
+/* レスポンシブスタイル PCのスタイルより後に書く*/
+@media (max-width: 800px) {
+  html {
+    box-shadow: none;
+    padding: 0;
+  }
+  /* ヘッダースタイル */
+  .header-nav {
+    padding: 2vh 1em 0 0;
+  }
+  .header-nav > li {
+    margin-left: 0.25em;
+  }
+  .header-nav > li ~ li {
+    padding-left: 0.25em;
+  }
+  .nav-links a {
+    font-size: 3.25vw;
+  }
+  .header-logo {
+    left: auto;
+  }
+  
+  /* Homeページスタイル */
+  .home-callout {
+    flex-direction: column;
+  }
+  .callout-copy {
+    flex: 1 1 0;
+  }
+  .bio-box {
+    float: none;
+    font-size: 1.3rem;
+    width: auto;
+  }
+  /* ブログスタイル */
+  .post-aside {
+    /* display: none; */
+  }
+  .blog-index .col-two {
+    flex-direction: column-reverse;
+  }
+
+  .blog-previews {
+    padding: 0;
+  }
+
+  .post .post-aside {
+    display: none;
+  }
+  .post-header h1 {
+    font-size: 7vw;
+  }
+  
+  .pull-left {
+    float: none;
+  }
+
+  .post-content img {
+    width: 80vw;
+    margin: 1.5em auto ;
+    /* width: auto; */
+  }
+  
+  /* ギャラリースタイル */
+  .gallery {
+    flex-direction: column;
+  }
+  .gallery .col {
+    padding: 1em;
+  }
+  .gallery .gallery-thumbs {
+    flex: 1;
+    height: auto;
+    white-space: nowrap;
+    width: 100vw;
+  }
+  .gallery-thumbs > div {
+    display: inline-block;
+  }
+  .gallery-thumbs img {
+    height: 7vh;
+    margin: 0 10px 0 0;
+    width: auto;
+  }
+  .gallery .gallery-info {
+    flex: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .half-hero {
+    display: none;
+  }
+  
 }
